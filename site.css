@@ -200,7 +200,8 @@ textarea {
 }
 
 .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper .starred-pages .page,
-.roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .log-button {
+.roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .log-button,
+.roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .log-button > div {
   font-size: 14px;
   line-height: 1em;
 }
