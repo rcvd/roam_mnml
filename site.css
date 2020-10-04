@@ -64,13 +64,13 @@ span.bp3-icon:empty::before,
 .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .log-button:hover,
 .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper .starred-pages .page:hover {
   color: #383b3f;
-  background-color: #f1f3f4;
+  background-color: #fefefe;
 }
 
 .roam-topbar input#find-or-create-input { 
   border-radius: 5px;
   box-shadow: none !important;
-  background-color: #fff;
+  background-color: #f1f3f4;
   color: #111;
 }  
 
