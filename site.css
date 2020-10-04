@@ -194,9 +194,9 @@ textarea {
 
 .roam-block,
 .rm-block-input {
-    line-height: 1.5em;
-    min-height: 32px;
-    margin-top: 0px;
+  line-height: 1.5em;
+  min-height: 32px;
+  margin-top: 0px;
 }
 
 .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper .starred-pages .page,
@@ -220,4 +220,8 @@ span.bp3-icon-standard {
 
 .rm-query .rm-query-title {
   display: none;
+}
+
+.rm-block-text {
+  max-width: inherit;
 }
