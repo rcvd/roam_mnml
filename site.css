@@ -13,14 +13,14 @@ body, html, div {
   display: none;
 }
 
-.starred-pages-wrapper .flex-h-box span {
-  display: none;
-}
-
 .bp3-icon-star::before,
 span.bp3-icon:empty::before,
 .bp3-button[class*="bp3-icon-"]::before{
   color: #606367;
+}
+
+.starred-pages-wrapper .flex-h-box span {
+  display: none;
 }
 
 .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper .starred-pages .page, .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper, .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .log-button {
@@ -29,19 +29,6 @@ span.bp3-icon:empty::before,
 
 .roam-body .roam-app {
   color: #111111;
-}
-
-.roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper .starred-pages .page,
-.roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper,
-.roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .log-button {
-  color: #383b3f;
-}
-
-.roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .top-row:hover,
-.roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .log-button:hover,
-.roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper .starred-pages .page:hover {
-  color: #383b3f;
-  background-color: #f1f3f4;
 }
 
 #roam-sidebar-logo {
@@ -63,6 +50,23 @@ span.bp3-icon:empty::before,
   background-color: #f1f3f4;
 }
 
+.roam-sidebar-container .rm-db-title-container .rm-db-title {
+  color: #383b3f;
+}
+
+.roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper .starred-pages .page,
+.roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper,
+.roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .log-button {
+  color: #383b3f;
+}
+
+.roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .top-row:hover,
+.roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .log-button:hover,
+.roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper .starred-pages .page:hover {
+  color: #383b3f;
+  background-color: #f1f3f4;
+}
+
 .roam-topbar input#find-or-create-input { 
   border-radius: 5px;
   box-shadow: none !important;
@@ -70,9 +74,6 @@ span.bp3-icon:empty::before,
   color: #111;
 }  
 
-.roam-sidebar-container .rm-db-title-container .rm-db-title {
-  color: #383b3f;
-}
 
 .kanban-column,
 .rm-reference-item,
@@ -99,15 +100,18 @@ body {
   background-color: #ffffff;
 }
 
+
+.rm-level1 .roam-block,
+.rm-level2 .roam-block,
+.rm-level3 .roam-block {
+  line-height: 1.5em;
+}
 .rm-level1,
 .rm-level2,
 .rm-level3,
 .rm-level1 textarea,
 .rm-level2 textarea,
-.rm-level3 textarea,
-.rm-level1 .roam-block,
-.rm-level2 .roam-block,
-.rm-level3 .roam-block {
+.rm-level3 textarea {
   font-size: inherit;
   line-height: 1.5em;
 }
@@ -181,6 +185,7 @@ body {
 .rm-reference-item {
   border: 1px solid #eef0f4;
 }
+
 
 textarea {
   line-height: 1.5em;
