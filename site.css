@@ -217,3 +217,7 @@ span.bp3-icon-standard {
 .kanban-board {
   background-color: #e1e3e4;
 }
+
+.rm-query .rm-query-title {
+  display: none;
+}
