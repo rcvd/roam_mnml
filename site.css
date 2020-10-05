@@ -224,3 +224,7 @@ span.bp3-icon-standard {
 .rm-block-text {
   max-width: inherit;
 }
+
+.controls .simple-bullet-outer {
+  margin-top: 4px;
+}
