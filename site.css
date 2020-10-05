@@ -224,12 +224,3 @@ span.bp3-icon-standard {
 .rm-block-text {
   max-width: inherit;
 }
-
-#buffer {
-  background-color: #dee0e4;
-}
-
-.bp3-button .bp3-icon, .bp3-button .bp3-icon-standard, .bp3-button .bp3-icon-large {
-  background-color: #808387;
-}
-
