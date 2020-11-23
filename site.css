@@ -1,145 +1,62 @@
-body, html, div {
-  font-size: 15px;
-  line-height: 1.5em;
+/* Fix mermaid diagrams */
+.react-resizable { height: auto; }
+.rm-mermaid svg { min-width: unset; }
+
+
+/* Fix kanban title height */
+.kanban-title {
+  max-height: 100px;
 }
 
-:root {
-  --primary-color: #A7B6C2;
-  --s1: 8px;
-  --background-color: #f5f6f800;
+/* Fix colors */
+#buffer {
+  background-color: #dfe1e5!important;
 }
 
-.starred-pages-wrapper > div:first-child {
-  display: none;
+#buffer .help-title,
+#buffer .help-sub-title,
+#buffer .help-item-label,
+#buffer .help-item-text {
+  color: #252729;
 }
 
-.bp3-icon-star::before,
-span.bp3-icon:empty::before,
-.bp3-button[class*="bp3-icon-"]::before{
-  color: #606367;
+div.roam-main > div.roam-body-main > div:nth-child(1) > div > div:nth-child(2) > div > div > div > div > strong,
+div.roam-main > div.roam-body-main > div:nth-child(1) > div > div:nth-child(2) > div > div > div:nth-child(2) > div > strong, 
+div.roam-main > div.roam-body-main > div:nth-child(1) > div > div:nth-child(2) > div > div > div.rm-reference-container > div.flex-h-box > div:nth-child(3) {
+  color: #b2b5ba!important;
+  margin-top: 2px;
+  font-weight: normal;
 }
 
-.starred-pages-wrapper .flex-h-box span {
-  display: none;
-}
-
-.roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper .starred-pages .page, .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper, .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .log-button {
-  text-transform: lowercase;
-}
-
-.roam-body .roam-app {
-  color: #111111;
+div.rm-reference-container > div > div:nth-child(3) > strong {
+  font-weight:normal;
 }
 
 #roam-sidebar-logo {
   display: none;
 }
 
-#roam-sidebar-logo .flex-h-box,
-.log-button,
-.starred-pages-wrapper {
-  border-right: 1px solid #eef0f4;
-}
-
-.roam-topbar, .roam-body .roam-app .roam-sidebar-container {
-  border-bottom: 1px solid #eef0f4;
-}
-
-.roam-topbar,
 .roam-body .roam-app .roam-sidebar-container {
-  background-color: #fcfeff;
+  background-color: #f8f9fa;
 }
 
-.roam-sidebar-container .rm-db-title-container .rm-db-title {
-  color: #383b3f;
+.rm-page-ref-tag,
+.rm-page-ref-tag:hover {
+    color: #b2b5ba!important;
 }
 
-.roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper .starred-pages .page,
-.roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper,
-.roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .log-button {
-  color: #383b3f;
+.bp3-button .bp3-icon, .bp3-button .bp3-icon-standard, .bp3-button .bp3-icon-large {
+  color: #5f6367;
 }
 
-.roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .top-row:hover,
-.roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .log-button:hover,
-.roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper .starred-pages .page:hover {
-  color: #383b3f;
-  background-color: #fefefe;
+.block-highlight-blue{
+  background-color: #cee2fc;
 }
 
-.roam-topbar input#find-or-create-input { 
-  border-radius: 5px;
-  box-shadow: none !important;
-  background-color: #f1f3f4;
-  color: #111;
-}  
-
-.kanban-column,
-.rm-reference-item,
-#right-sidebar {
-  background-color: #f1f3f4;
-}
-
-.rm-page-ref-tag {
-  color: #8f8f8f
-}
-
-a,
-.rm-page-ref-link-color {
-  color: #2562bb;
-}
-
-a:hover,
-.rm-page-ref:hover {
-  text-decoration: none;
-  color: #2562bb;
-}
-
-body {
-  background-color: #ffffff;
-}
-
-
-.rm-level1 .roam-block,
-.rm-level2 .roam-block,
-.rm-level3 .roam-block {
-  line-height: 1.5em;
-}
-.rm-level1,
-.rm-level2,
-.rm-level3,
-.rm-level1 textarea,
-.rm-level2 textarea,
-.rm-level3 textarea {
-  font-size: inherit;
-  line-height: 1.5em;
-}
-
-.roam-body .roam-app h1,
-.rm-level1 {
-  font-weight: 600;
-
-}
-
-.rm-level2 {
-  font-weight: 600;
-}
-
-.rm-level3 {
-  font-weight: normal;
-  font-style: italic;
-}
-
-.roam-article h1:first-child,
-.rm-title-display,
-.roam-body .roam-app .roam-main .roam-article .rm-title-display,
-.level2 {
-  font-size: 20px;
-  font-family: inherit;
-  font-weight: 600;
-  color: inherit;
-  border-bottom: none;
-  min-height: 32px;
+.bp3-icon-star::before,
+span.bp3-icon:empty::before,
+.bp3-button[class*="bp3-icon-"]::before{
+  color: #5f6367;
 }
 
 .rm-caret {
@@ -151,51 +68,72 @@ body {
   background-color: #b2b5ba;
 }
 
-.kanban-board {
-  background-color: #ccc;
+.rm-query {
+  border: 0.5px solid #dadce0;
+}
+
+.kanban-column,
+.rm-reference-item,
+#right-sidebar {
+  background-color: #f8f9fa;
+}
+
+.roam-sidebar-container .rm-db-title-container .rm-db-title {
+  color: #252729;
+}
+
+.roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .top-row:hover {
+  background-color: #f8f9fa;
+}
+
+.roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper .starred-pages .page,
+.roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper,
+.roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .log-button {
+  color: #252729;
+}
+
+.roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper .starred-pages .page:hover,
+.roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper:hover,
+.roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .log-button:hover {
+  color: #252729;
+  background-color: #f8f9fa;
+}
+
+/* Make sidebar lowercase */
+.roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper .starred-pages .page, .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper, .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .log-button {
+  text-transform: lowercase;
+}
+
+/* Fix search bar */
+.roam-topbar input#find-or-create-input { 
+  border-radius: 25px;
+  box-shadow: none !important;
+  background-color: #f1f3f4;
+  color: #252729;
+}
+
+.roam-topbar input#find-or-create-input::placeholder {
+  color: #6a6b6d;
+}
+
+/* Fix font sizes */
+body, html, div {
+  font-size: 15px;
+  line-height: 1.5em;
+}
+
+.roam-article h1:first-child,
+.rm-title-display,
+.roam-body .roam-app .roam-main .roam-article .rm-title-display,
+.level2 
+{
+  color: inherit;
+  font-size: 20px;
+  font-weight: 600;
 }
 
 .rm-mentions .rm-ref-page-view .rm-ref-page-view-title {
   font-size: 15px;
-}
-
-.rm-mentions .rm-ref-page-view .rm-ref-page-view-title a:hover {
-  text-decoration: none;
-}
-
-.block-highlight-blue{
-  background-color: #cee2fc;
-}
-
-.roam-log-container .roam-log-preview h1,
-.roam-log-container .roam-log-preview {
-  color: #8f8f8f;
-  border-bottom: none;
-}
-
-.check-container {
-  top: -8px;
-}
-
-.block-border-left {
-  border-left: 1px solid #b2b5ba;
-}
-
-.rm-reference-item {
-  border: 1px solid #eef0f4;
-}
-
-
-textarea {
-  line-height: 1.5em;
-  min-height: 32px;
-}
-
-.roam-block,
-.rm-block-input {
-  line-height: 1.5em;
-  min-height: 32px;
-  margin-top: 0px;
 }
 
 .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper .starred-pages .page,
@@ -205,26 +143,120 @@ textarea {
   line-height: 1em;
 }
 
-.roam-log-container .roam-log-page {
-  border-top: 1px solid #b2b5ba;
+.rm-title-display {
+  font-size: 20px;
+  min-height: 30px;
+}
+
+/* Fix enumeration width and bullet position */
+.roam-block, .rm-block-input, textarea {
+  margin-top: 0px;
 }
 
 span.bp3-icon-standard {
-  font-size: 20px;
+  margin-top: 4px;
 }
 
-.kanban-board {
-  background-color: #e1e3e4;
+.rm-mentions .rm-ref-page-view .rm-ref-page-view-title {
+  margin-top: 4px;
 }
 
+/* Fix position of outer bullets */
+.roam-block {
+  top: 0px;
+}
+
+.controls {
+  padding-top: 2px;
+}
+
+.controls .simple-bullet-outer {
+  margin-top: 6px;
+}
+
+/* Fix position of block line */
+.block-bullet-view {
+  margin-left: 6px;
+}
+
+/* Fix position of embed container */
+.rm-embed-container {
+  margin-left: -3px;
+  background-color: #f1f3f4;
+}
+
+/* Hide Logo */
+#roam-sidebar-logo {
+  display: none;
+}
+
+/* Hide Shortcuts */
+.starred-pages-wrapper .flex-h-box span {
+  display: none;
+}
+
+/* Hide hr */
+.starred-pages-wrapper > div:first-child {
+  display: none;
+}
+
+/* Fix link hover */
+a,
+.rm-page-ref-link-color {
+  color: #2562bb;
+}
+
+a:hover,
+a:hover span, 
+.rm-page-ref:hover {
+  text-decoration: none!important;
+  color: #2562bb;
+}
+
+/* Fix headings */
+.roam-body .roam-app h1,
+.rm-level1 {
+  font-weight: 600;
+}
+
+.rm-level2 {
+  font-weight: 600;
+}
+
+.rm-level3 {
+  font-weight: normal;
+  font-style: italic;
+}
+
+/* Fix textareas */
+.roam-block,
+textarea {
+  line-height: 1.5em;
+  min-height: 30px;
+}
+
+.rm-level1 .roam-block,
+.rm-level2 .roam-block,
+.rm-level3 .roam-block {
+  line-height: 1.5em;
+}
+
+.rm-level1,
+.rm-level2,
+.rm-level3,
+.rm-level1 textarea,
+.rm-level2 textarea,
+.rm-level3 textarea {
+  font-size: inherit;
+  line-height: 1.5em;
+}
+
+/* Hide query */
 .rm-query .rm-query-title {
   display: none;
 }
 
-.rm-block-text {
-  max-width: inherit;
-}
-
-.controls .simple-bullet-outer {
-  margin-top: 4px;
+/* Fix check container position */
+.check-container {
+  margin-bottom: 12px;
 }
