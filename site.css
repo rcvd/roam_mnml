@@ -1,3 +1,8 @@
+/* Fix table overflow */
+.roam-table td {
+  overflow: initial;
+}
+
 /* Fix mermaid diagrams */
 .react-resizable { height: auto; }
 .rm-mermaid svg { min-width: unset; }
