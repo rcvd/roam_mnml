@@ -1,3 +1,23 @@
+.rm-bullet {
+  margin-top: 3px;
+}
+
+/* Change Code Block Background */
+.CodeMirror-lines {
+  background-color: #f8f9fa;
+}
+
+/* Change Code Block font */
+.CodeMirror .CodeMirror-code pre {
+  font-family: 'Menlo', monospace;
+  font-size: 13px;
+}
+
+/* Fix roam42 calendar month picker font size */
+.flatpickr-current-month .flatpickr-monthDropdown-months {
+  font-size: 16px;
+}
+
 /* Fix table overflow */
 .roam-table td {
   overflow: initial;
@@ -69,7 +89,7 @@ span.bp3-icon:empty::before,
 }
 
 .check-container input:checked ~ .checkmark,
-.controls .simple-bullet-outer .simple-bullet-inner {
+.rm-bullet .rm-bullet__inner {
   background-color: #b2b5ba;
 }
 
